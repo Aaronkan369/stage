@@ -15,13 +15,10 @@ import javax.annotation.Resource;
  */
 @Controller
 public class PersonController {
-
     @Resource
     private IPersonService personService;
-
     @RequestMapping(value = "/me/person",produces = "text/html;charset=UTF-8",method = RequestMethod.GET)
     public String getPerson(@RequestParam("value") String data, Model model){
-        System.out.println(data);
         Person person = personService.getPerson(data);
         if (person!=null){
             model.addAttribute("p",person);

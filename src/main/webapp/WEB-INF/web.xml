@@ -5,9 +5,9 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3.0.xsd">
 
    <display-name>back</display-name>
-   <!-- <welcome-file-list>
+    <welcome-file-list>
         <welcome-file>/index</welcome-file>
-    </welcome-file-list>-->
+    </welcome-file-list>
     <!--log4j监听器  要放在spring的linstener之前-->
     <context-param>
         <param-name>log4jConfigLocation</param-name>
@@ -29,7 +29,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath*:/spring/spring-mvc.xml</param-value>
+            <param-value>classpath:/spring/spring-mvc.xml</param-value>
         </init-param>
         <!--启动时加载-->
         <load-on-startup>1</load-on-startup>
@@ -40,6 +40,7 @@
         <servlet-name>SpringMVC</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    <!--拦截默认首页-->
     <servlet-mapping>
         <servlet-name>SpringMVC</servlet-name>
         <url-pattern>/index</url-pattern>

@@ -27,7 +27,6 @@ public class PersonServiceImpl implements IPersonService {
         }catch (JSONException e){
             e.printStackTrace();
         }
-
         return person;
     }
 }

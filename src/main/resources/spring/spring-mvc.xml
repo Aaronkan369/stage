@@ -13,7 +13,7 @@
     <!--扫描@Controller-->
    <context:component-scan base-package="com.xiaojian.stage.controller"/>
     <context:component-scan base-package="com.xiaojian.stage.serviceImpl"/>
-    <!--开启注解模式-->
+    <!--开启注解驱动-->
     <mvc:annotation-driven />
     <!--视图模式-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
