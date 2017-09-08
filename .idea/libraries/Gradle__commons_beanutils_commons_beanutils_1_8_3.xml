@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: commons-beanutils:commons-beanutils:1.8.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://D:/Tomcat7.0/apache-tomcat-7.0.72_3/lib/jsp-api.jar!/" />
+      <root url="jar://D:/Tomcat7.0/apache-tomcat-7.0.72_3/lib/servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
